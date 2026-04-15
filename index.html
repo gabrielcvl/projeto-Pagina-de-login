@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+
+<head>
+<html lang="pt-br">
+   <meta charset="UTF-8">
+<title>Tela de Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<script>
+function mostrarSenha(){
+
+let campoSenha = document.getElementById("senha");
+
+if(campoSenha.type === "password"){
+campoSenha.type = "text";
+}else{
+campoSenha.type = "password";
+}
+
+}
+</script>
+
+<div class="login">
+<h2>Bem-Vindo</h2>
+<p>Entre na sua conta</p>
+
+<form>
+
+<label for="email">Email</label>
+<input id= "email" type="email" placeholder="Digite seu email" required>
+
+<label for="senha">Senha</label>
+<div class="senha-area">
+<input id="senha" type="password" placeholder="Digite sua Senha" required>
+<button type="button" onclick="mostrarSenha()">👁️</button>
+
+<button>Entrar</button>
+<a href="#">Esqueci minha senha</a>
+<p>Não tem conta? <a href="Cadastro.html">Criar Conta</a></p>
+<p class="direitos">Projeto de estudo - Gabriel Carvalho</p>
+</form>
+
+</div>
+
+
+</body>
+</html>
